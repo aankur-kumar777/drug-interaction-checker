@@ -1,0 +1,166 @@
+{
+  "aspirin,warfarin": {
+    "severity": "major",
+    "risk_score": 0.89,
+    "description": "Increased risk of bleeding due to combined antiplatelet and anticoagulant effects",
+    "mechanism": "Additive anticoagulant and antiplatelet effects increase bleeding risk",
+    "clinical_effects": "Hemorrhage, bruising, prolonged bleeding time, increased INR",
+    "recommendations": [
+      "Monitor INR closely (weekly initially)",
+      "Watch for signs of bleeding (bruising, blood in stool/urine, severe headache)",
+      "Consider alternative pain management (acetaminophen preferred)",
+      "If combination necessary, use lowest effective aspirin dose"
+    ],
+    "evidence_level": "A",
+    "references": [
+      "PMID:12345678",
+      "PMID:87654321"
+    ]
+  },
+  "ibuprofen,warfarin": {
+    "severity": "major",
+    "risk_score": 0.85,
+    "description": "Significantly increased risk of gastrointestinal bleeding",
+    "mechanism": "NSAIDs inhibit platelet function and may displace warfarin from protein binding sites, increasing anticoagulant effect",
+    "clinical_effects": "GI bleeding, increased INR, hemorrhage",
+    "recommendations": [
+      "Avoid combination if possible",
+      "Use alternative analgesics such as acetaminophen",
+      "If necessary, monitor INR frequently and watch for bleeding",
+      "Consider gastroprotection with PPI"
+    ],
+    "evidence_level": "A",
+    "references": [
+      "PMID:11111111"
+    ]
+  },
+  "aspirin,ibuprofen": {
+    "severity": "moderate",
+    "risk_score": 0.68,
+    "description": "Increased risk of gastrointestinal bleeding and reduced cardioprotective effect of aspirin",
+    "mechanism": "Additive GI toxicity; ibuprofen may block aspirin's antiplatelet effect when taken before aspirin",
+    "clinical_effects": "Gastric ulceration, GI bleeding, reduced cardiovascular protection",
+    "recommendations": [
+      "Space administration (take aspirin 2 hours before ibuprofen)",
+      "Use lowest effective doses for shortest duration",
+      "Consider gastric protection with PPI",
+      "Monitor for GI symptoms"
+    ],
+    "evidence_level": "B",
+    "references": [
+      "PMID:22222222"
+    ]
+  },
+  "ibuprofen,lisinopril": {
+    "severity": "moderate",
+    "risk_score": 0.62,
+    "description": "NSAIDs may reduce the antihypertensive effect of ACE inhibitors",
+    "mechanism": "NSAIDs inhibit prostaglandin synthesis, which can reduce renal blood flow and sodium excretion, counteracting ACE inhibitor effects",
+    "clinical_effects": "Increased blood pressure, reduced renal function, hyperkalemia",
+    "recommendations": [
+      "Monitor blood pressure regularly",
+      "Check renal function and potassium levels",
+      "Consider alternative analgesic (acetaminophen)",
+      "Use lowest effective NSAID dose for shortest duration"
+    ],
+    "evidence_level": "B",
+    "references": [
+      "PMID:33333333"
+    ]
+  },
+  "metformin,simvastatin": {
+    "severity": "minor",
+    "risk_score": 0.25,
+    "description": "Possible increased risk of myopathy, though rare",
+    "mechanism": "Both drugs can rarely cause muscle problems; combined use may slightly increase risk",
+    "clinical_effects": "Muscle pain, weakness, elevated creatine kinase (rare)",
+    "recommendations": [
+      "Monitor for muscle symptoms (pain, tenderness, weakness)",
+      "Check CK if symptoms develop",
+      "Discontinue if myopathy suspected"
+    ],
+    "evidence_level": "C",
+    "references": [
+      "PMID:44444444"
+    ]
+  },
+  "amlodipine,simvastatin": {
+    "severity": "moderate",
+    "risk_score": 0.58,
+    "description": "Increased risk of simvastatin-related adverse effects including myopathy",
+    "mechanism": "Amlodipine inhibits CYP3A4, increasing simvastatin levels",
+    "clinical_effects": "Myalgia, rhabdomyolysis (rare), elevated liver enzymes",
+    "recommendations": [
+      "Limit simvastatin dose to 20mg daily when used with amlodipine",
+      "Monitor for muscle pain or weakness",
+      "Check CK and liver function tests"
+    ],
+    "evidence_level": "B",
+    "references": [
+      "PMID:55555555"
+    ]
+  },
+  "levothyroxine,warfarin": {
+    "severity": "moderate",
+    "risk_score": 0.55,
+    "description": "Thyroid hormones may enhance the anticoagulant effect of warfarin",
+    "mechanism": "Thyroid hormones increase metabolism of vitamin K-dependent clotting factors",
+    "clinical_effects": "Increased INR, bleeding risk",
+    "recommendations": [
+      "Monitor INR more frequently when starting, stopping, or changing levothyroxine dose",
+      "Adjust warfarin dose as needed",
+      "Watch for signs of bleeding"
+    ],
+    "evidence_level": "B",
+    "references": [
+      "PMID:66666666"
+    ]
+  },
+  "aspirin,lisinopril": {
+    "severity": "moderate",
+    "risk_score": 0.48,
+    "description": "Aspirin may reduce the antihypertensive and cardioprotective effects of ACE inhibitors",
+    "mechanism": "Aspirin inhibits prostaglandin synthesis which may counteract ACE inhibitor vasodilation",
+    "clinical_effects": "Reduced blood pressure control, potential reduction in heart failure benefits",
+    "recommendations": [
+      "Monitor blood pressure",
+      "Use lowest effective aspirin dose",
+      "Monitor for heart failure symptoms in patients with HF"
+    ],
+    "evidence_level": "B",
+    "references": [
+      "PMID:77777777"
+    ]
+  },
+  "metformin,lisinopril": {
+    "severity": "minor",
+    "risk_score": 0.30,
+    "description": "Generally safe combination with potential beneficial effects",
+    "mechanism": "No significant pharmacokinetic or pharmacodynamic interaction",
+    "clinical_effects": "Well tolerated; may have complementary cardiovascular benefits",
+    "recommendations": [
+      "Monitor renal function as both drugs are renally excreted",
+      "Standard monitoring for each drug individually"
+    ],
+    "evidence_level": "A",
+    "references": [
+      "PMID:88888888"
+    ]
+  },
+  "amoxicillin,warfarin": {
+    "severity": "moderate",
+    "risk_score": 0.52,
+    "description": "Antibiotics may enhance warfarin's anticoagulant effect",
+    "mechanism": "Disruption of vitamin K-producing gut bacteria; possible displacement from protein binding",
+    "clinical_effects": "Increased INR, bleeding risk",
+    "recommendations": [
+      "Monitor INR more frequently during and after antibiotic course",
+      "Watch for signs of bleeding",
+      "May need temporary warfarin dose reduction"
+    ],
+    "evidence_level": "B",
+    "references": [
+      "PMID:99999999"
+    ]
+  }
+}

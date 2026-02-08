@@ -1,0 +1,56 @@
+# Backend Requirements for Drug Interaction Checker
+
+# Core Framework
+Flask==3.0.0
+Flask-CORS==4.0.0
+Flask-RESTful==0.3.10
+
+# Data Processing
+numpy==1.24.3
+pandas==2.0.3
+
+# Machine Learning
+scikit-learn==1.3.0
+xgboost==2.0.0
+
+# Graph Processing
+networkx==3.1
+
+# API Documentation
+flask-swagger-ui==4.11.1
+flasgger==0.9.7.1
+
+# Testing
+pytest==7.4.0
+pytest-flask==1.2.0
+pytest-cov==4.1.0
+
+# Utilities
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Development
+black==23.7.0
+flake8==6.0.0
+pylint==2.17.5
+
+# Logging
+colorlog==6.7.0
+
+# Data Validation
+marshmallow==3.20.1
+jsonschema==4.19.0
+
+# Optional: Database (if using persistent storage)
+# SQLAlchemy==2.0.19
+# psycopg2-binary==2.9.7
+
+# Optional: Caching
+# redis==4.6.0
+# flask-caching==2.0.2
+
+# Optional: Neo4j for knowledge graph
+# neo4j==5.11.0
+
+# Production Server
+gunicorn==21.2.0

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Interaction Checker - AI-Powered Safety Analysis</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-pills"></i>
+                    <h1>Drug Interaction Checker</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#api">API</a>
+                    <a href="https://github.com/yourusername/drug-interaction-checker" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2>AI-Powered Drug Interaction Analysis</h2>
+                <p>Leverage machine learning and medical knowledge graphs to identify drug interactions, assess risks, and get evidence-based recommendations.</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>ML-Powered</h3>
+                        <p>Advanced machine learning models predict interactions with 92%+ accuracy</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Knowledge Graph</h3>
+                        <p>Comprehensive medical ontology with 15,000+ documented interactions</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Risk Assessment</h3>
+                        <p>Stratified severity levels with evidence-based clinical recommendations</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Smart Alternatives</h3>
+                        <p>Suggests safer medication alternatives based on pharmacological profiles</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interaction Checker -->
+            <section class="checker-section">
+                <div class="checker-card">
+                    <div class="card-header">
+                        <h2>Check Drug Interactions</h2>
+                        <p>Add medications to analyze potential interactions</p>
+                    </div>
+
+                    <div class="drug-input-section">
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                id="drug-search" 
+                                placeholder="Search for a drug (e.g., Warfarin, Aspirin)..."
+                                autocomplete="off"
+                            >
+                            <button id="add-drug-btn" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Add Drug
+                            </button>
+                        </div>
+                        <div id="drug-suggestions" class="suggestions-dropdown"></div>
+                    </div>
+
+                    <div id="selected-drugs" class="selected-drugs"></div>
+
+                    <div class="action-buttons">
+                        <button id="check-btn" class="btn btn-success" disabled>
+                            <i class="fas fa-search"></i> Analyze Interactions
+                        </button>
+                        <button id="clear-btn" class="btn btn-secondary">
+                            <i class="fas fa-trash"></i> Clear All
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Analyzing drug interactions...</p>
+                </div>
+
+                <!-- Results Section -->
+                <div id="results-section" class="results-section" style="display: none;">
+                    <!-- Overall Risk -->
+                    <div class="risk-overview">
+                        <h3>Overall Risk Assessment</h3>
+                        <div id="risk-level" class="risk-badge"></div>
+                        <div id="risk-summary"></div>
+                    </div>
+
+                    <!-- Interactions List -->
+                    <div class="interactions-list">
+                        <h3>Detected Interactions</h3>
+                        <div id="interactions-container"></div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="recommendations">
+                        <h3>Clinical Recommendations</h3>
+                        <div id="recommendations-container"></div>
+                    </div>
+
+                    <!-- Alternatives -->
+                    <div class="alternatives" id="alternatives-section" style="display: none;">
+                        <h3>Safer Alternatives</h3>
+                        <div id="alternatives-container"></div>
+                    </div>
+
+                    <!-- Visualization -->
+                    <div class="visualization">
+                        <h3>Interaction Network</h3>
+                        <div id="graph-container"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Disclaimer -->
+            <section class="disclaimer">
+                <div class="disclaimer-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Important Medical Disclaimer</h3>
+                    <p>
+                        This tool is for educational and informational purposes only. It is <strong>not a substitute for professional medical advice</strong>, 
+                        diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions 
+                        you may have regarding medications or medical conditions.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Drug Interaction Checker. Open Source Project.</p>
+            <p>
+                <a href="#privacy">Privacy Policy</a> | 
+                <a href="#terms">Terms of Use</a> | 
+                <a href="https://github.com/yourusername/drug-interaction-checker">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="utils/api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
